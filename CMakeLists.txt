@@ -1,0 +1,30 @@
+cmake_minimum_required(VERSION 3.19.0)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+project(homework3-10-2)
+
+add_library(Figure Figure.cpp)
+add_library(Triangle Triangle.cpp)
+add_library(Quadrangle Quadrangle.cpp)
+add_library(Equil_triangle Equil_triangle.cpp)
+add_library(Iso_triangle Iso_triangle.cpp)
+add_library(Right_triangle Right_triangle.cpp)
+add_library(Parallelogram Parallelogram.cpp)
+add_library(Rectangle Rectangle.cpp)
+add_library(Rhombus Rhombus.cpp)
+add_library(Square Square.cpp)
+
+
+add_executable(homework3-10-2 homework3-6-3.cpp)
+
+target_link_libraries(homework3-10-2 Figure)
+target_link_libraries(homework3-10-2 Triangle)
+target_link_libraries(homework3-10-2 Quadrangle)
+target_link_libraries(homework3-10-2 Equil_triangle)
+target_link_libraries(homework3-10-2 Iso_triangle)
+target_link_libraries(homework3-10-2 Right_triangle)
+target_link_libraries(homework3-10-2 Parallelogram)
+target_link_libraries(homework3-10-2 Rectangle)
+target_link_libraries(homework3-10-2 Rhombus)
+target_link_libraries(homework3-10-2 Square)
